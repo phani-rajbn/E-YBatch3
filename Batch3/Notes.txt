@@ -1,0 +1,22 @@
+HTML Programming: 
+What is Web App Development? 
+Apps that are executed on a thin software called browser and accessed using internet are called Web Apps. Development of Web Apps is called Web Development. It is done as per the stds defined by W3C. We use a protocol called HTTP which is a Text based protocol for interacting b/w the App and the user. 
+
+The constituents of a Web App will be Web pages or Web Docs, Images, data, Media files, Forms to take inputs from the user and some scripting capabilities to make the pages interactive and dynamic. 
+HTML is the language used to develop the web pages or docs. HTML is a mark up language. Mark up language are text based presentors where the content is presented with the help of tags. The content is sourounded by these tags to provide formatting to the content. These tags are interpreted by the browsers and present the text in the predefined format.  
+HTML Pages are text based files saved with .html extension. It can be developed on any platform and stored. Once the whole set of files are created, U group them into an organized folder and place it in a machine that has a software called Web server. IIS, Apache Tomcat, Websphere are some of the popular Web servers availabe. For commercial purpose U depend on 3rd party vendors like GoDaddy to host the directory in their server and give an access with a unique address across the globe. 
+
+Advantages of HTML?
+Text based, I can create it and maintain it using any text based Editor. 
+It is not logical based or a programming language.  
+Popular way of designing Web pages. HTML is the foundation for all Web based content Development. 
+
+Disadvantages:
+Content is static. Any change made to ur file will not be reflected on the browser until the user refreshes the browser to view the new info. For this we use scripting languages. 
+HTML does not provide much support to stylings and Animation for which we use CSS. 
+
+Outcome:
+Actually this promotes seperation of concerns. Each task is independent. CSS guy needs to have little knowledge about the tags the Page is using. Designer of the page will not be concerned abou the presentation as it is handled by the CSS. 
+Programming part is taken by a scripting language programmer. 
+
+
