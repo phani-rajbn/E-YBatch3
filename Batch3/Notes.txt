@@ -19,4 +19,17 @@ Outcome:
 Actually this promotes seperation of concerns. Each task is independent. CSS guy needs to have little knowledge about the tags the Page is using. Designer of the page will not be concerned abou the presentation as it is handled by the CSS. 
 Programming part is taken by a scripting language programmer. 
 
+----------------------------------------------------------
+
+HTML is static and cannot generate dynamic content. Users need dynamic content for making the app interactive as well as getting live data instead of pre formatted data. 
+
+Scripting languages are light weight languages that work on interpretors to convert the code to a simple text based content and inject it into a web page. Client side and server side Scripting languages. Client side Scripting languages are VBScript, Javascript, JScript, Perl and so forth. 
+Server side are those scripts that run in the web server as a part of the execution pipeline of server side apps.
+The most popular and recommended client side scripting language is JS and its subsidaries. It is supported on every browser. 
+
+Software setup, requirements, IDE, Variables and Consts, Data types, Data Conversions, Statements and Expressions, Arrays, Functions, Enums, User defined data types, objects, lib APIs. 
+
+All U need is a browser to run ur js code. HTML + JS is what is required to make UR program run. 
+VS code or Sublime text is good for all web centric app development. 
+PS: Since Nodejs, we can create and run JS code from the cmd prompt. Nodejs is a platform for executing JS code out of the browser. 
 

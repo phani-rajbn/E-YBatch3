@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables, Constants, Arrays</title>
+</head>
+<body>
+    <p>
+        The following keywords are used to declare variables in JS: <br>
+        let keyword for modifying data <br>
+        const keyword for const data <br>
+        var keyword for old classic JS <br>
+    </p>
+    <script>
+        /* var temp;
+        console.log(temp);//variables that are not identified or unassigned
+        let ex = 123 //JS is a dynamic language,
+        console.log(typeof(ex)); 
+        ex = "Something else";
+        console.log(typeof(ex)); 
+        ex = true;
+        console.log(typeof(ex)); 
+        ex = 123.345;//number for both floating as well as integral values
+        console.log(typeof(ex)); 
+        ex = {"empName" : "Phaniraj", "empSalary" : 65000};
+        console.log(typeof(ex));  
+        let msg = "Welcome to Training";
+        msg = "Hai again, will see this"
+
+         */
+        //It is recommended to create array objects of the same type...
+        const data = [123, "Sample Name",  "Apple", 234.345, true, false ];
+        data.push("Some data to the last");
+        data.unshift("Adds to the first");
+        for (const value of data) {
+            document.write("<p>" + value + "</p>");
+        }
+        //Mozilla.org 
+        //splice is a method of Array that allows to insert/delete/update
+
+    </script>
+</body>
+</html>

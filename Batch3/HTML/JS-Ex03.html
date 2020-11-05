@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainStyle.css">
+    <script>
+        //A function should be modular in nature...
+        function mathOperation(first, second, operation){
+            let res = 0;
+            switch(operation){
+                case "+": res = first + second ; break;
+                case "-": res = first - second ; break;
+                case "*": res = first * second ; break;
+                case "/": res = first / second ; break;
+            }
+            return res;
+        }
+        function calculate(){
+            //get the values entered by the users
+            const v1 = parseFloat(document.getElementById("fValue").value)
+            const v2 = parseFloat(document.getElementById("sValue").value)
+            const operand = document.getElementById("slOption").value;
+            let res = mathOperation(v1, v2, operand);
+            document.getElementById("spRes").innerText = res;
+        }  
+    </script>
+</head
+<body>
+    <h1>Calculator program</h1>
+    <hr>
+    <div>
+        <input type="number" id="fValue" placeholder="First Value">
+        <select id="slOption">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        <input type="number" id="sValue" placeholder="Second Value">
+        <button onclick="calculate()">=</button>
+        <p>The Result: <span id="spRes"></span></p>
+    </div>
+</body>
+</html>

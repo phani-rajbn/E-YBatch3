@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "./Output",
+        "target": "ES2020"
+    },
+    "include": [
+        "*.ts"
+    ],
+    "exclude": [
+        "node-modules"
+    ]
+}

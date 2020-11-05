@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Output/Ex03.js"></script>
+    <script>
+        const calcFunc = function(first, second, op){
+            let res = 0;
+            switch (op) {
+                case "+": res = first + second; break;
+                case "-": res = first - second; break;
+                case "*": res = first * second; break;
+                case "/": res = first / second; break;
+            }
+            return res;
+        }
+        //$get is my customized wrapper function to call document.getElementById
+        function calculate(){
+            const v1 = parseInt($get("fValue").value);
+            const v2 = parseInt($get("sValue").value);
+            const op = $get("slOption").value;
+            const res = calcFunc(v1, v2, op);
+            $get("spRes").innerText = res;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculator program</h1>
+    <hr>
+    <div>
+        <input type="number" id="fValue" placeholder="First Value">
+        <select id="slOption">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        <input type="number" id="sValue" placeholder="Second Value">
+        <button onclick="calculate()">=</button>
+        <p>The Result: <span id="spRes"></span></p>
+    </div>
+</body>
+</html>

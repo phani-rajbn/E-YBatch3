@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./mainStyle.css">
+    <script>
+        function onProcess(){
+            const name = document.getElementById("ename").value;
+            const email = document.getElementById("email").value;
+            const dob = document.getElementById("dob").value;
+            alert("The Name is " + name + " available at " + email);
+        }
+    </script>
+</head>
+<body>
+    <h1>Employee Registration Form</h1>
+    <form name="myForm" id="myForm">
+         <input type="text" placeholder="Enter the Name" required id="ename"/>   
+         <input type="email" placeholder="Enter the Email" id="email" required/>   
+         <input type="date" placeholder="Enter the Date of Birth" id="dob"/>
+         <select id="slQualification">
+             <option>Qualification</option>
+             <option>Graduation</option>
+             <option>Post Graduation</option>
+             <option>Under Graduation</option>
+             <option>Pre University</option>
+             <option>SSLC</option>
+         </select><br>
+         <input class="radio" name="gender" type="radio"/>Male
+         <input class="radio" name="gender" type="radio"/>Female
+         <input class="radio" name="gender" type="radio"/>Other
+         <button onclick="onProcess()">Register</button>   
+    </form>   
+</body>
+</html>
