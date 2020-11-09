@@ -1,0 +1,11 @@
+
+h1{
+    font-size: 60pt;
+    text-align: center;
+    color : lightpink;
+}
+
+div{
+    display: inline-block;
+    border: 2px solid blue;
+}
